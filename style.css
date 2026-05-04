@@ -1,1 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Datatype:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+.navBar {
+    background-color: #3b394d;
+    color: #e5e1e9;
+    display: block;
+}
+*/
+.navBar {
+    color: #e5e1e9;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: -2px 3px 5px hsl(251, 28%, 76%);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(59, 57, 79, 0.85);
+    backdrop-filter: blur(4px);
+}
+#title {
+    line-height: 15px;
+    font-family: 'DM Mono';
+    font-size: 30px;
+    color: #ffffff;
+}
+.navBar a {
+    text-decoration: none;
+    line-height: 45px;
+    font-family: 'DM Mono';
+    font-size: 20px;
+    color: #ffffff;
+    filter: opacity(0.7);
+}
+.navBar a {
+    transition: all 0.5s ease-in-out;
+}
+.navBar #current {
+    color: #e5e1e9;
+    text-decoration: underline;
+}
+.navBar a:hover {
+    filter: opacity(1);
+    transition: all 0.5s ease-in-out;
+}
 
+/* for the site contents-- left & right offset + fonts. */
+.contentContainer {
+    margin: 7% 8% 0% 8%;
+}
+.contentContainer h1, h2, h3, h4 {
+    font-family: 'Montserrat';
+}
+.contentContainer p {
+    font-family: 'Datatype';
+}
+
+.boxContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.roundedBox {
+    border-radius: 30px;
+    background-color: #eeeeee;
+    width: 60%;
+    height: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.textShadow {
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.3));
+}
